@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+.container{
+    display: flex; /* 親要素の並ぶ向き */
+    flex-direction: column; /* 子要素の並ぶ向き */
+    font-family: 'Noto Serif JP', sans-serif;
+    width:10%;
+}
+
+body {
+    width: 100%;
+  }
+  
+  .btn_design {
+      font-size: 28px;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px 15px;
+      background-color: #333;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+  }
+  
+  /* マウスオーバー時 */
+  .btn_design:hover {
+        letter-spacing: 10px;
+        cursor: pointer;
+  }
+
+/* マウスオーバーで振る舞いを変えたい */
+.container:hover{
+    color:#fff;
+    background-color: #5f9ea0;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:50px;
+}
+
+.itemlist {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.itemlist li {
+	max-width: 33.333333%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+*/
+@media screen and (max-width: 767px) {
+	.itemlist li {
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 414px) {
+	.itemlist li {
+		max-width: none;
+	}
+}
+.itemlist dl,
+.itemlist dd {
+	margin: 0;
+}
+.itemlist dl {
+	text-align: right;
+}
+.itemlist dt,
+.itemlist .txt {
+	text-align: left;
+}
+.itemlist dt {
+	font-size: .9em;
+	font-weight: 700;
+}
+.itemlist dd {
+	margin-top: .2em;
+	font-size: .8em;
+}
+.itemlist .price {
+	display: inline-block;
+	padding: .1em .5em;
+	background: #eee;
+}
+.itemlist img {
+    margin-top: 10%;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+
+h2 {
+	position: relative;
+	padding-left: 30px;
+	font-size:20px;
+	color: #325A8C;
+}
+h2::before,
+h2::after{
+	content: "□";
+	position: absolute;
+}
+h2::before{
+	left:0;
+	top:-3px;
+}
+h2::after{
+	left: 5px;
+	top: 3px;
+	color: #A1B8D1;
+}
+
+/* フッター */
+footer {
+    background:#5f9ea0;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size :0.875rem;
+}
